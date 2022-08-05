@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body, 
+h1,h2,p{
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========
+TYPOGRAPHY
+========== */
+body{
+  font-family: "Inter", sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #2B283A;
+}
+
+/* ==========
+LAYOUT
+========== */
+.App{
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* ==========
+HEADER
+========== */
+.header{
+  background-color: #F55A5A;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--image{
+  width: 24px;
+  margin-right: 0.5em;
+  padding: 1em 0;
+}
+
+.header--title{
+  font-size: 0.875rem;
+  display: inline;
+  letter-spacing: 1px;
+}
+
+/* =========
+Card
+========== */
+.card{
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:center;
+  justify-content: space-between;
+  gap: 2em;
+
+}
+
+.card--image{
+  width: 90%;
+  max-width: 250px;
+  height: 170px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.card--location-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.card--location{
+  text-transform: uppercase;
+  margin: 0 1.2em 0 0.4em; 
+}
+
+.card--title,
+.card--date{
+  font-weight: 700;
+}
+
+.card--title{
+  text-transform: capitalize;
+  font-size: 1.625rem;
+}
+
+.card--map,
+.card--map:focus,
+.card--map:active{
+  color: #918E9B;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .card{
+    flex-direction: row-reverse;  
+  }
+
+  .card--image{
+    width: 125px;
+  }
+}
