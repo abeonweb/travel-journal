@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abeonweb.github.io",
+  "homepage": "https://abeonweb.github.io/travel-journal",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +12,6 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -20,6 +19,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "gh-pages": "^4.0.0",
     "vite": "^3.0.0"
   }
 }
