@@ -2,6 +2,7 @@ import React from "react"
 import locationIcon from "./assets/locationIcon.svg"
 
 export default function Card(props){
+    
     return (
         <div className="card">
             <div className="card--location-info">

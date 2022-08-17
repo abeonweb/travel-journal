@@ -4,11 +4,14 @@ import Card from "./Card"
 import Header from "./Header"
 
 export default function App(){
-    const dataCards = data.map(card => getCard(card))
+    const [cardData, setCardData] = React.useState(data)
+    const dataCardsArray = cardData.map(card => getCard(card))
+    
+    
     return (
         <div className="App">
             <Header />
-            {dataCards}
+            {dataCardsArray}
         </div>
     )
 }
